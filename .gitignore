@@ -5,6 +5,10 @@ ehthumbs.db
 # Folder config file
 Desktop.ini
 
+# data - too large for github
+images/
+data/
+
 # Recycle Bin used on file shares
 $RECYCLE.BIN/
 
