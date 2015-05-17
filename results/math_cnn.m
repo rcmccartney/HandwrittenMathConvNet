@@ -5,13 +5,13 @@ run(fullfile('C:\Users\Henry\Box Sync\Projects\matconvnet-master\matlab', ...
     'vl_setupnn.m')) ;
 
 opts.dataDir = fullfile('data');
-opts.expDir = fullfile('data', 'math2');
+opts.expDir = fullfile('data', 'math');
 opts.imdbPath = fullfile(opts.expDir, 'imdb.mat');
-opts.train.batchSize = 50 ;
-opts.train.numEpochs = 100 ;  
+opts.train.batchSize = 200 ;
+opts.train.numEpochs = 200 ;  
 opts.train.continue = true ;  % can continue training after stopping
 opts.train.useGpu = true ;
-opts.train.learningRate = [0.001*ones(1, 50) 0.0001*ones(1,50)] ;
+opts.train.learningRate = [0.1*ones(1, 50) 0.01*ones(1, 50) 0.001*ones(1, 50) 0.0001*ones(1,50)] ;
 opts.weightDecay = 0.0005 ;
 opts.momentum = 0.90 ;
 opts.train.outputClasses = 101 ;
